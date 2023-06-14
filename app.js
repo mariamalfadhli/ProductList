@@ -10,9 +10,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/products", (req, res) => {
-  res.send({
-    data: data,
-  });
+  res.json({ data });
 });
 
 app.listen(PORT, () => {
